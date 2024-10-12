@@ -466,7 +466,8 @@
         "nixpkgs": "nixpkgs_6",
         "poolboy": "poolboy",
         "pre-commit-hooks": "pre-commit-hooks",
-        "tracing": "tracing"
+        "tracing": "tracing",
+        "unstable": "unstable"
       }
     },
     "systems": {
@@ -497,6 +498,22 @@
       "original": {
         "owner": "scrive",
         "repo": "tracing",
+        "type": "github"
+      }
+    },
+    "unstable": {
+      "locked": {
+        "lastModified": 1728538411,
+        "narHash": "sha256-f0SBJz1eZ2yOuKUr5CA9BHULGXVSn6miBuUWdTyhUhU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "b69de56fac8c2b6f8fd27f2eca01dcda8e0a4221",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
         "type": "github"
       }
     }

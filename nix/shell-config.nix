@@ -1,4 +1,10 @@
-{ src, pkgs, hsPkgs, pre-commit-check }: hsPkgs.shellFor {
+{ src
+, pkgs
+, hsPkgs
+, pre-commit-check
+,
+}:
+hsPkgs.shellFor {
   packages = p: [ p.flora ];
   nativeBuildInputs = [
     pkgs.haskell-language-server
@@ -10,6 +16,7 @@
     pkgs.souffle
     pkgs.yarn
     pkgs.esbuild
+    pkgs.libsodium
   ];
 
   shellHook = ''
@@ -20,4 +27,3 @@
     cat ${src}/scripts/shell-welcome.txt
   '';
 }
-
